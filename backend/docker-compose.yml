@@ -18,12 +18,12 @@ services:
 
   nginx:
     image: nginx:alpine
-    container_name: webserver
+    container_name: webserver1
     restart: unless-stopped
     tty: true
     ports:
-      - 8000:80
-      - 443:443
+      - 8001:80
+      - 444:443
     volumes:
       - ./:/var/www/
       - ./docker/nginx/conf.d/:/etc/nginx/conf.d/  
